@@ -1,7 +1,7 @@
 import pytest
 from random import seed
 
-from unicode_obfuscate.unicode_obfuscate import Obfuscator
+from unicode_obfuscate import Obfuscator
 
 
 text = "Nobody expext the spanish inquisition!"
