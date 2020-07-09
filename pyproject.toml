@@ -3,6 +3,9 @@ name = "unicode_obfuscate"
 version = "0.1.0"
 description = "Replace unicode characters with visually similar ones."
 authors = ["Lucas Bellomo <lbellomo@gmail.com>"]
+license = "GPL-3.0-only"
+readme = "README.md"
+repository = "https://github.com/lbellomo/unicode_obfuscate"
 include = ["unicode_obfuscate/data/*.json"]
 exclude = ["utils"]
 
