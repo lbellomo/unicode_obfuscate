@@ -25,7 +25,7 @@ def parse_txt(txt: str, invert: bool = False) -> defaultdict:
             data[b] += [a]
         else:
             data[a] += [b]
-    
+
     return data
 
 
@@ -45,8 +45,10 @@ intencional_url = "https://www.unicode.org/Public/security/latest/intentional.tx
 intencional_poplist = ["d"]  # the only one that is not the same visually ( d !~ ԁ )
 
 
-options = [[intencional_url, intencional_poplist, False],
-           [confusables_url, confusables_poplist, True]]
+options = [
+    [intencional_url, intencional_poplist, False],
+    [confusables_url, confusables_poplist, True],
+]
 
 path_data = Path(__file__).parent / "../unicode_obfuscate/data"
 
