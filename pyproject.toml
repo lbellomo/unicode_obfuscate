@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "unicode_obfuscate"
+version = "0.1.0"
+description = "Replace unicode characters with visually similar ones."
+authors = ["Lucas Bellomo <lbellomo@gmail.com>"]
+include = ["unicode_obfuscate/data/*.json"]
+exclude = ["utils"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
